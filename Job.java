@@ -1,3 +1,7 @@
+/*
+ * This is a Thread Pool example from workshop week 4 
+ */
+
 public class Job implements Runnable {
     private int jobNumber;
 
