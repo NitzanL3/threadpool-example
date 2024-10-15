@@ -1,6 +1,8 @@
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+/*
+ * This is a Thread Pool App example from week 4
+ */
 public class ThreadPoolApp {
     public static void main(String[] args) {
         if (args.length < 2) {
@@ -8,8 +10,8 @@ public class ThreadPoolApp {
         }
 
         try {
-            int numberOfJobs = Integer.parseInt(args[0]);
-            int numberOfThreads = Integer.parseInt(args[1]);
+            int numberOfJobs = Integer.parseInt(args[2]);
+            int numberOfThreads = Integer.parseInt(args[4]);
 
             if ((numberOfJobs <= 1) || (numberOfThreads <= 1)) {
                 ThreadPoolApp.error();
